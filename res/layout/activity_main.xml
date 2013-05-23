@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.jetllama.avatarcreator.AvatarArtist
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/faceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/picker"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/picker"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" />
+
+    <com.larswerkman.colorpicker.SaturationBar
+        android:id="@+id/saturationbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.larswerkman.colorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saturationbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+    <ImageButton
+        android:id="@+id/ImageButton01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/faceButton"
+        android:layout_toRightOf="@+id/picker"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faceButton"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/picker"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/ImageButton03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ImageButton02"
+        android:layout_toRightOf="@+id/picker"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>
