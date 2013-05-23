@@ -77,11 +77,11 @@ public class AvatarArtist extends View {
 		mouths[5] = context.getResources().getDrawable(R.drawable.mouth0);
 		
 		ears[0] = context.getResources().getDrawable(R.drawable.ears0);
-		ears[1] = context.getResources().getDrawable(R.drawable.ears0);
-		ears[2] = context.getResources().getDrawable(R.drawable.ears0);
-		ears[3] = context.getResources().getDrawable(R.drawable.ears0);
-		ears[4] = context.getResources().getDrawable(R.drawable.ears0);
-		ears[5] = context.getResources().getDrawable(R.drawable.ears0);
+		ears[1] = context.getResources().getDrawable(R.drawable.ears1);
+		ears[2] = context.getResources().getDrawable(R.drawable.ears1);
+		ears[3] = context.getResources().getDrawable(R.drawable.ears1);
+		ears[4] = context.getResources().getDrawable(R.drawable.ears1);
+		ears[5] = context.getResources().getDrawable(R.drawable.ears1);
 		
 	}
 	
