@@ -52,6 +52,7 @@ public class AvatarArtist extends View {
 		currentMouth = 0;
 		currentEars = 0;
 		
+		
 		faces[0] = context.getResources().getDrawable(R.drawable.face0);
 		faces[1] = context.getResources().getDrawable(R.drawable.face1);
 		faces[2] = context.getResources().getDrawable(R.drawable.face2);
