@@ -41,7 +41,7 @@
         android:layout_marginBottom="14dp" />
 
     <ImageButton
-        android:id="@+id/ImageButton01"
+        android:id="@+id/earButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/faceButton"
@@ -50,7 +50,7 @@
         android:src="@drawable/ic_launcher" />
 
     <ImageButton
-        android:id="@+id/ImageButton02"
+        android:id="@+id/mouthButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/faceButton"
@@ -60,11 +60,11 @@
         android:src="@drawable/ic_launcher" />
 
     <ImageButton
-        android:id="@+id/ImageButton03"
+        android:id="@+id/eyeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ImageButton02"
-        android:layout_toRightOf="@+id/picker"
+        android:layout_alignLeft="@+id/earButton"
+        android:layout_alignTop="@+id/mouthButton"
         android:focusable="false"
         android:src="@drawable/ic_launcher" />
 

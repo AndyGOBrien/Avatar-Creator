@@ -17,6 +17,9 @@ public class MainActivity extends Activity implements OnColorChangedListener, On
 	private AvatarArtist artist;
 	private SaturationBar satBar;
 	private ImageButton faceButton;
+	private ImageButton earButton;
+	private ImageButton mouthButton;
+	private ImageButton eyeButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,10 @@ public class MainActivity extends Activity implements OnColorChangedListener, On
 		artist = (AvatarArtist)findViewById(R.id.artist);
 		satBar = (SaturationBar)findViewById(R.id.saturationbar);
 		faceButton = (ImageButton) findViewById(R.id.faceButton);
+		earButton = (ImageButton) findViewById(R.id.earButton);
+		mouthButton = (ImageButton) findViewById(R.id.mouthButton);
+		eyeButton = (ImageButton) findViewById(R.id.eyeButton);
+		
 		
 		
 		colorPicker.setOnColorChangedListener(this);
@@ -50,12 +57,18 @@ public class MainActivity extends Activity implements OnColorChangedListener, On
 		colorPicker.setOldCenterColor(color);
 	}
 	
-	public void onClick(View v){
-		if(v.getId() == faceButton.getId()){
-			artist.nextFace();
-		}
-		
-	}
 	
+	public void onClick(View v)
+	{
+		if(v.getId() == faceButton.getId())
+			artist.nextFace();
+		if(v.getId() == earButton.getId())
+			artist.nextEar();
+		if(v.getId() == mouthButton.getId())
+			artist.nextMouth();
+		if(v.getId() == eyeButton.getId())
+			artist.nextEye();
+	}
+
 
 }

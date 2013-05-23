@@ -61,9 +61,25 @@ public class AvatarArtist extends View {
 		faces[5] = context.getResources().getDrawable(R.drawable.face5);
 		
 		eyes[0] = context.getResources().getDrawable(R.drawable.eyes0);
+		eyes[1] = context.getResources().getDrawable(R.drawable.eyes0);
+		eyes[2] = context.getResources().getDrawable(R.drawable.eyes0);
+		eyes[3] = context.getResources().getDrawable(R.drawable.eyes0);
+		eyes[4] = context.getResources().getDrawable(R.drawable.eyes0);
+		eyes[5] = context.getResources().getDrawable(R.drawable.eyes0);
+		
 		mouths[0] = context.getResources().getDrawable(R.drawable.mouth0);
+		mouths[1] = context.getResources().getDrawable(R.drawable.mouth0);
+		mouths[2] = context.getResources().getDrawable(R.drawable.mouth0);
+		mouths[3] = context.getResources().getDrawable(R.drawable.mouth0);
+		mouths[4] = context.getResources().getDrawable(R.drawable.mouth0);
+		mouths[5] = context.getResources().getDrawable(R.drawable.mouth0);
 		
 		ears[0] = context.getResources().getDrawable(R.drawable.ears0);
+		ears[1] = context.getResources().getDrawable(R.drawable.ears0);
+		ears[2] = context.getResources().getDrawable(R.drawable.ears0);
+		ears[3] = context.getResources().getDrawable(R.drawable.ears0);
+		ears[4] = context.getResources().getDrawable(R.drawable.ears0);
+		ears[5] = context.getResources().getDrawable(R.drawable.ears0);
 		
 	}
 	
@@ -76,7 +92,21 @@ public class AvatarArtist extends View {
 		currentFace = currentFace >= 5 ? 0 : currentFace + 1;
 		invalidate();
 	}
+	
+	public void nextEar(){
+		currentEars = currentEars >= 5 ? 0 : currentEars + 1;
+		invalidate();
+	}
+	
+	public void nextEye(){
+		currentEyes = currentEyes >= 5 ? 0 : currentEyes + 1;
+		invalidate();
+	}
 
+	public void nextMouth(){
+		currentMouth = currentMouth >= 5 ? 0 : currentMouth + 1;
+		invalidate();
+	}
 
 	@Override
 	protected void onDraw(Canvas canvas) {

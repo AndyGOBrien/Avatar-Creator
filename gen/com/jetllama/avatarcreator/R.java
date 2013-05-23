@@ -147,12 +147,12 @@ containing a value of this type.
         public static final int mouth0=0x7f020009;
     }
     public static final class id {
-        public static final int ImageButton01=0x7f080004;
-        public static final int ImageButton02=0x7f080005;
-        public static final int ImageButton03=0x7f080006;
         public static final int action_settings=0x7f080007;
         public static final int artist=0x7f080000;
+        public static final int earButton=0x7f080004;
+        public static final int eyeButton=0x7f080006;
         public static final int faceButton=0x7f080001;
+        public static final int mouthButton=0x7f080005;
         public static final int picker=0x7f080002;
         public static final int saturationbar=0x7f080003;
     }
