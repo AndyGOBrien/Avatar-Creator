@@ -40,6 +40,9 @@ public class MainActivity extends Activity implements OnColorChangedListener, On
 		colorPicker.addSaturationBar(satBar);
 		
 		faceButton.setOnClickListener(this);
+		earButton.setOnClickListener(this);
+		mouthButton.setOnClickListener(this);
+		eyeButton.setOnClickListener(this);
 		
 		
 		
