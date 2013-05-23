@@ -14,10 +14,12 @@ public class AvatarArtist extends View {
 	private int backgroundColor;
 	
 	
+	
+	
 	private Drawable faces[] = new Drawable[6];
-	private Drawable eyes[] = new Drawable[1];
-	private Drawable mouths[] = new Drawable[1];
-	private Drawable ears[] = new Drawable[1];
+	private Drawable eyes[] = new Drawable[6];
+	private Drawable mouths[] = new Drawable[6];
+	private Drawable ears[] = new Drawable[6];
 	
 	private int currentFace;
 	private int currentEyes;
