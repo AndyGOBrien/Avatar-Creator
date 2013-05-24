@@ -80,8 +80,7 @@ public class AvatarArtist extends View {
 		ears[1] = context.getResources().getDrawable(R.drawable.ears1);
 		ears[2] = context.getResources().getDrawable(R.drawable.ears2);
 		ears[3] = context.getResources().getDrawable(R.drawable.ears3);
-		ears[4] = context.getResources().getDrawable(R.drawable.ears1);
-		ears[5] = context.getResources().getDrawable(R.drawable.ears1);
+
 		
 	}
 	
@@ -96,7 +95,7 @@ public class AvatarArtist extends View {
 	}
 	
 	public void nextEar(){
-		currentEars = currentEars >= 5 ? 0 : currentEars + 1;
+		currentEars = currentEars >= 3 ? 0 : currentEars + 1;
 		invalidate();
 	}
 	
